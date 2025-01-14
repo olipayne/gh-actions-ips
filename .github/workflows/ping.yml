@@ -1,8 +1,8 @@
 name: Ping Cloudflare Worker
 
 on:
-  schedule:
-    - cron: "* * * * *"  # runs every minute
+    schedule:
+      - cron: "*/5 * * * *"
 
 jobs:
   ping:
