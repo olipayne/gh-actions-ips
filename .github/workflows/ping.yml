@@ -10,5 +10,5 @@ jobs:
     steps:
       - name: Ping Worker
         run: |
-          curl -s "https://<your-worker>.workers.dev?secret=${{ secrets.SECRET }}"
+          curl -s "${{ secrets.WORKER_PING_URL }}"
       
