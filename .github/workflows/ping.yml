@@ -1,0 +1,12 @@
+name: Ping Cloudflare Worker
+
+on:
+  schedule:
+    - cron: "* * * * *"  # runs every minute
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping Worker
+        run: curl -s -X GET "https://d1-collect-ips.olbol.workers.dev?secret=xyz123"
