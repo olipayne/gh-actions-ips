@@ -3,6 +3,7 @@ name: Ping Cloudflare Worker
 on:
     schedule:
       - cron: "*/5 * * * *"
+    workflow_dispatch:
 
 jobs:
   ping:
